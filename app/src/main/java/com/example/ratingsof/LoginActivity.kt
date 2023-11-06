@@ -10,8 +10,4 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
     }
-    fun irASecondActivity(view: View) {
-        val intent = Intent(this, register::class.java)
-        startActivity(intent)
-    }
 }
