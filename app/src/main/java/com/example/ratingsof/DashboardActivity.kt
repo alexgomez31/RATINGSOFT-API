@@ -11,7 +11,7 @@ class DashboardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.dashboard)
 
         val misionButton: Button = findViewById(R.id.misionButton)
         val visionButton: Button = findViewById(R.id.visionButton)
@@ -21,32 +21,32 @@ class DashboardActivity : AppCompatActivity() {
         val saberMasButton: Button = findViewById(R.id.saberMasButton)
 
         misionButton.setOnClickListener {
-            val intent = Intent(this::class.java)
+            val intent = Intent(this, misionButton::class.java)
             startActivity(intent)
         }
 
         visionButton.setOnClickListener {
-            val intent = Intent(this, VisionActivity::class.java)
+            val intent = Intent(this, Mision::class.java)
             startActivity(intent)
         }
 
         cursosButton.setOnClickListener {
-            val intent = Intent(this, CursosActivity::class.java)
+            val intent = Intent(this, Cursos::class.java)
             startActivity(intent)
         }
 
         gestionUsuarioButton.setOnClickListener {
-            val intent = Intent(this, GestionUsuarioActivity::class.java)
+            val intent = Intent(this, GestionUsuario::class.java)
             startActivity(intent)
         }
 
         acercaDeButton.setOnClickListener {
-            val intent = Intent(this, AcercaDeActivity::class.java)
+            val intent = Intent(this, AcercaDe::class.java)
             startActivity(intent)
         }
 
         saberMasButton.setOnClickListener {
-            val intent = Intent(this, SaberMasActivity::class.java)
+            val intent = Intent(this, SaberMas::class.java)
             startActivity(intent)
         }
     }
