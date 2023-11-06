@@ -3,7 +3,7 @@
     <!-- Estado normal -->
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
-            <solid android:color="#009688" /> <!-- Color de fondo en estado normal -->
+            <solid android:color="#009688" />
             <corners android:radius="10dp" /> <!-- Radio de esquinas -->
         </shape>
     </item>
@@ -11,7 +11,7 @@
     <!-- Estado presionado -->
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <solid android:color="#007766" /> <!-- Color de fondo cuando se presiona -->
+
             <corners android:radius="10dp" />
         </shape>
     </item>
