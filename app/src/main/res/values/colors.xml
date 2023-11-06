@@ -3,4 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="color_launch">#009688</color>
+
+    <color name="color_mision">#FF5733</color>
+    <color name="color_vision">#33FF33</color>
+    <color name="color_cursos">#3344FF</color>
+    <color name="color_gestion_usuario">#FFCC33</color>
+    <color name="color_acerca_de">#FF33CC</color>
+    <color name="color_saber_mas">#33CCFF</color>
 </resources>
