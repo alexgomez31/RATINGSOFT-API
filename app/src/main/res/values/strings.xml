@@ -5,6 +5,13 @@
     <string name="secondary_color">Secondary color</string>
     <string name="email_icon">email icon</string>
 
+    <string name="mision">Misión</string>
+    <string name="vision">Visión</string>
+    <string name="cursos">Cursos</string>
+    <string name="gestion">Gestion de Usuarios</string>
+    <string name="grados">Grados</string>
+
+
 
 </resources>
 
