@@ -17,8 +17,7 @@ class DashboardActivity : AppCompatActivity() {
         val visionButton: Button = findViewById(R.id.visionButton)
         val cursosButton: Button = findViewById(R.id.cursosButton)
         val gestionUsuarioButton: Button = findViewById(R.id.gestionUsuarioButton)
-        val acercaDeButton: Button = findViewById(R.id.acercaDeButton)
-        val saberMasButton: Button = findViewById(R.id.saberMasButton)
+
 
         misionButton.setOnClickListener {
             val intent = Intent(this, misionButton::class.java)
@@ -40,14 +39,5 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        acercaDeButton.setOnClickListener {
-            val intent = Intent(this, AcercaDe::class.java)
-            startActivity(intent)
-        }
-
-        saberMasButton.setOnClickListener {
-            val intent = Intent(this, SaberMas::class.java)
-            startActivity(intent)
-        }
     }
 }

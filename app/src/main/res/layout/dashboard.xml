@@ -15,10 +15,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Dashboard"
-            android:fontFamily="font/productsans_bold.ttf"
             android:textSize="24sp"
             android:textColor="@color/white"
             android:layout_margin="20dp" />
+
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,7 +34,33 @@
                 android:layout_height="170dp"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/color_acerca_de"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="501dp"
+                        android:layout_height="86dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/vision" />
+                    <Button
+                        android:id="@+id/misionButton"
+                        android:text="@string/vision"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/gray"
                 android:layout_margin="10dp">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -43,17 +69,15 @@
                     android:gravity="center">
                     <ImageView
                         android:layout_width="501dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/mision"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
+                        android:layout_height="86dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/mision" />
+                    <Button
+                        android:id="@+id/visionButton"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:text="@string/mision"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -70,45 +94,17 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/assignment"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
+                        android:layout_width="501dp"
+                        android:layout_height="86dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/gestion" />
+
+                    <Button
+                        android:id="@+id/cursosButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Assignments"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/homework"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Home-Work"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
+                        android:layout_marginTop="1dp"
+                        android:text="@string/gestion" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -125,81 +121,21 @@
                     android:orientation="vertical"
                     android:gravity="center">
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/syllabus"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
+                        android:layout_width="501dp"
+                        android:layout_height="86dp"
+                        android:layout_marginTop="18dp"
+                        android:src="@drawable/cursos" />
+                    <Button
+                        android:id="@+id/gestionUsuarioButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Syllabus"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/attendance"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Attendance"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="170dp"
-                android:layout_height="170dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="5dp"
-                app:cardBackgroundColor="@color/gray"
-                android:layout_margin="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:src="@drawable/timetable"
-                        android:layout_marginTop="18dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Time-Table"
-                        android:fontFamily="font/productsans_bold.ttf"
-                        android:textSize="18dp"
-                        android:textColor="@color/white"
-                        android:layout_marginTop="20dp"/>
+                        android:text="@string/cursos"
+                        android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
         </GridLayout>
 
-
     </LinearLayout>
-
-
 
 </ScrollView>
