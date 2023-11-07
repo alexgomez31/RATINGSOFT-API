@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dashboard"
-            android:textSize="24sp"
+            android:layout_margin="20dp"
+            android:text="RATINGSOFT"
             android:textColor="@color/white"
-            android:layout_margin="20dp" />
+            android:textSize="24sp" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -51,6 +52,7 @@
                         android:text="@string/vision"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -77,6 +79,7 @@
                         android:layout_width="wrap_content"
                         android:text="@string/mision"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -104,6 +107,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
+                        android:backgroundTint="@color/"
                         android:text="@string/gestion" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -130,6 +134,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cursos"
+                        android:backgroundTint="@color/"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
