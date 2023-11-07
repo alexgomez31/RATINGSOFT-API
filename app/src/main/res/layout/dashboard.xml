@@ -11,13 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ratingsoft"
-            android:textSize="24sp"
+
+            android:layout_margin="20dp"
+            android:text="RATINGSOFT"
             android:textColor="@color/white"
-            android:layout_margin="20dp" />
+            android:textSize="24sp" />
 
         <GridLayout
             android:layout_width="match_parent"
@@ -46,12 +48,14 @@
                         android:layout_width="501dp"
                         android:layout_height="86dp"
                         android:layout_marginTop="18dp"
+
                         android:src="@drawable/vision" />
                     <Button
                         android:id="@+id/misionButton"
                         android:text="@string/vision"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_saber_mas"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -78,6 +82,7 @@
                         android:layout_width="wrap_content"
                         android:text="@string/mision"
                         android:layout_height="wrap_content"
+                        android:backgroundTint="@color/color_saber_mas"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -105,6 +110,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
+                        android:backgroundTint="@color/color_saber_mas"
                         android:text="@string/gestion" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -131,6 +137,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/cursos"
+                        android:backgroundTint="@color/color_saber_mas"
                         android:layout_marginTop="1dp"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
