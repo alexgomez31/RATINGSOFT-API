@@ -1,5 +1,6 @@
 package com.example.ratingsof
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -9,10 +10,10 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import com.example.ratingsof.R
 import com.example.ratingsof.api.ApiService
 import com.example.ratingsof.network.ApiClient
-import com.example.ratingsof.model.LoginResponse // Asegúrate de importar la clase de modelo correcta
+import com.example.ratingsof.model.LoginResponse
+
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -48,33 +49,5 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 2000) // 2000 milisegundos (2 segundos)
-
-        // Inicializa la vista donde se mostrarán los datos de la API
-        textView = findViewById(R.id.textView2)
-
-        // Realiza la solicitud para obtener cursos desde la API
-        val cursosCall = ApiClient.retrofit.create(ApiService.CursosApiService::class.java).obtenerCursos()
-        cursosCall.enqueue(object : Callback<List<ApiService>> {
-            override fun onResponse(call: Call<List<ApiService>>, response: Response<List<ApiService>>) {
-                if (response.isSuccessful) {
-                    val cursos = response.body()
-                    // Procesa los cursos y actualiza la interfaz de usuario
-                    if (cursos != null) {
-                        for (curso in cursos) {
-                            textView.append("Nombre del curso: ${curso.nombre}\n")
-                            // Agrega más campos según la estructura de tu modelo de datos
-                        }
-                    }
-                } else {
-                    // Maneja errores de la API
-                    textView.text = "Error al obtener cursos"
-                }
-            }
-
-            override fun onFailure(call: Call<List<ApiService>>, t: Throwable) {
-                // Maneja errores de red
-                textView.text = "Error de red al obtener cursos"
-            }
-        })
     }
 }
